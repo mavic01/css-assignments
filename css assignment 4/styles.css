@@ -1,0 +1,286 @@
+@import url("https://fonts.googleapi.com/css?family=Lato&display=swap");
+
+/* CSS Reset  */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  font-family: "Lato", sans-serif;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+/* input,
+button,
+textarea,
+select {
+  font: inherit;
+} */
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+p {
+  text-wrap: pretty;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-wrap: balance;
+}
+
+#root,
+#__next {
+  isolation: isolate;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #f7fdfd;
+  margin: 0px 60px 0px 60px;
+}
+
+.wrapper1 {
+  width: 460px;
+  height: 275px;
+  align-content: center;
+  padding: 5px;
+}
+
+.mobile-hero {
+  display: none;
+}
+
+.logo {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.3);
+  /* background: green; */
+  background: conic-gradient(
+    #3bbdb1 0% 25%,
+    #9ecd43 25% 50%,
+    #ffc624 50% 75%,
+    #f37a1b 75% 100%
+  );
+}
+
+.mobile-wrapper-2 {
+  display: none;
+}
+
+.wrapper2 {
+  width: 580px;
+  height: 540px;
+  border-radius: 6px;
+  align-content: center;
+  justify-content: center;
+  background-color: #fff;
+  margin: 50px 0px 50px 0px;
+  -webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.48);
+  -moz-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.48);
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.48);
+  padding: 20px;
+}
+
+.the-form {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.form-div-1,
+.form-div-2,
+.form-div-3 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 15px;
+}
+
+.gender,
+.dob {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+}
+
+.activity-level,
+.pass {
+  width: 100%;
+  height: 30px;
+}
+
+input,
+select {
+  height: 30px;
+}
+
+input:focus {
+  outline: 2px solid #2ec5b6;
+}
+
+select:invalid {
+  color: #999;
+}
+.the-form span {
+  margin-right: 50px;
+}
+
+.gender,
+.submit,
+.activityL,
+.passwordd {
+  margin-top: 15px;
+}
+button {
+  width: 90%;
+  height: 40px;
+  background-color: #2ec5b6;
+  border: none;
+  cursor: pointer;
+  border-radius: 2px;
+}
+
+.tos a {
+  color: #2ec5b6;
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    background-color: #f7fdfd;
+  }
+
+  .container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 60px;
+  }
+
+  .mobile-hero {
+    display: block;
+  }
+
+  .logo {
+    margin-bottom: 30px;
+  }
+
+  .wrapper1 {
+    display: none;
+  }
+
+  .wrapper2 {
+    display: none;
+  }
+
+  .mobile-wrapper-2 {
+    display: block;
+    background-color: white;
+    margin-top: 70px;
+  }
+
+  .the-form {
+    margin-bottom: 20px;
+  }
+
+  button {
+    width: 100%;
+    font-size: 16px;
+    font-weight: 500;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    padding: 14px;
+  }
+
+  label {
+    margin-top: 20px;
+  }
+}
+
+@media screen and (max-width: 390px) {
+  body {
+    background-color: #f7fdfd;
+  }
+
+  .container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 60px;
+  }
+
+  .mobile-hero {
+    display: block;
+  }
+
+  .logo {
+    margin-bottom: 30px;
+  }
+
+  .wrapper1 {
+    display: none;
+  }
+
+  .wrapper2 {
+    display: none;
+  }
+
+  .mobile-wrapper-2 {
+    display: block;
+    background-color: white;
+    margin-top: 10px;
+  }
+
+  .the-form {
+    margin-bottom: 25px;
+  }
+
+  button {
+    width: 100%;
+    font-size: 24px;
+    font-weight: 500;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    padding: 12px;
+  }
+
+  label {
+    margin-top: 20px;
+  }
+
+  input,
+  select,
+  button {
+    height: 40px;
+    padding: 10px;
+  }
+}
