@@ -9,7 +9,7 @@
 
         body {
             font-family: 'Lato', sans-serif;
-            background: radial-gradient(circle at center, #2973B2, #48A6A7);
+            background-image: url("assets/pattern.jpg");
             width: 100vw;
         }
         .link-container {
@@ -19,8 +19,14 @@
             justify-content: center;
             gap: 30px;
         }
-        h3 {
-            color: #F2EFE7;
+        h2, h3 {
+            color: #ACFADF;
+            font-weight: bold;
+            font-size: 22px;
+        }
+        .link-wrapper {
+            display: flex;
+            gap: 10px;
         }
         a {
             text-decoration: none;
@@ -40,17 +46,26 @@
                 transform: scale(1.1);
             }
         }
+        @media screen and (max-width: 390px){
+            .link-wrapper {
+                flex-direction: column;
+            }
+        }
     </style>
 </head>
 <body>
     <div class="link-container">
+        <h2>Name: <span style="color: #C5FF95;">Iberi Victor Nnaemeka</span></h2>
+        <h3>Student ID: <span style="color: #C5FF95;">ALT/SOE/024/1557</span></h3>
         <h3>CSS Assignments</h3>
-        <a href="./css assignment 1/">Assignment 1</a>
-        <a href="./css assignment 2/">Assignment 2</a>
-        <a href="./css assignment 3/">Assignment 3</a>
-        <a href="./css assignment 4/">Assignment 4</a>
-        <a href="./css assignment 5/">Assignment 5</a>
-        <a href="./css assignment 6/">Assignment 6</a>
+        <div class="link-wrapper">
+            <a href="./css assignment 1/">Assignment 1</a>
+            <a href="./css assignment 2/">Assignment 2</a>
+            <a href="./css assignment 3/">Assignment 3</a>
+            <a href="./css assignment 4/">Assignment 4</a>
+            <a href="./css assignment 5/">Assignment 5</a>
+            <a href="./css assignment 6/">Assignment 6</a>
+        </div>
     </div>
 </body>
 </html>
