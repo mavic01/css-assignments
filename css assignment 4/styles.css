@@ -226,6 +226,7 @@ button {
   }
 }
 
+
 @media screen and (max-width: 390px) {
   body {
     background-color: #f7fdfd;
@@ -264,10 +265,12 @@ button {
     margin-bottom: 25px;
   }
 
+  .activity-level {
+    height: 40px;
+  }
+
   button {
     width: 100%;
-    font-size: 24px;
-    font-weight: 500;
     border-radius: 5px;
     margin-bottom: 15px;
     padding: 12px;
