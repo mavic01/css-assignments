@@ -7,13 +7,17 @@
   margin: 0;
   padding: 0;
 }
-
+html,
+body {
+  width: 100%;
+  overflow-x: hidden;
+}
 body {
   height: 100vh;
   margin: 0;
   font-family: "Lora", serif;
   background: linear-gradient(from top, #f3ece9 0%, #fefdfb 100%);
-  overflow-x: hidden;
+  /* overflow-x: hidden; */
 }
 
 .navbar {
@@ -671,6 +675,9 @@ select:invalid {
 }
 
 @media screen and (max-width: 390px) {
+  .body {
+    margin-left: 0;
+  }
   .navbar {
     width: 100%;
   }
